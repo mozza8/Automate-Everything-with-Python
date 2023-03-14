@@ -1,6 +1,7 @@
 import requests
 
 r = requests.get('https://newsapi.org/v2/everything?qInTitle=stock%20market&from=2023-2-20&to=2022-2-21&sortBy=popularity&language=en&apiKey=890603a55bfa47048e4490069ebee18c')
+# r = response na request
 
 content = r.json()   # content = python dict
 
