@@ -19,6 +19,7 @@ def get_news(topic, from_date, to_date, language='en', api_key='890603a55bfa4704
     results = []
     izhodna = open(f'Novice od {from_date} do {to_date}', mode='w', encoding='utf-8')
     for article in articles:
+        print(article)
         a = (f"TITLE\n {article['title']}  \nDESCRIPTION\n {article['description']}\n\n")
         izhodna.write(a)
     return results
