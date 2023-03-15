@@ -13,6 +13,7 @@ def vremenske_razmere(mesto, api_key='43351154cde5583ff0542471f6542896'):
         forecast = vreme['weather'][0]['description']
         a = f"{mesto},{vreme['dt_txt']},{tempera},{forecast}\n"
         izhodna.write(a)
+    izhodna.close()
     return results
 
 vremenske_razmere(mesto='Ljubljana')
